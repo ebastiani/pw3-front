@@ -3,6 +3,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from './Telas/Home/Home'
+import Cadastro from './Telas/Cadastro/Cadastro';
+import Login from './Telas/Login/Login';
+import Dashboard from './Telas/Dashboard/Dashboard';
 
 import {
   BrowserRouter as Router,
@@ -13,11 +16,13 @@ import {
 
 function App() {
   return (
-  
+
     <Router>
-    
       <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );

@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
   return (
-    <div> Oi </div>
+   <>
+    Página Inicial
+    <Link to="/cadastro" className="link-primary">Entrar no sistema</Link>
+   </>
   )
 }
 
